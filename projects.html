@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <header>
+    <nav>
+      <ol>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="about.html">About</a>
+        </li>
+        <li>
+          <a href="projects.html">Projects</a>
+        </li>
+        <li>
+          <a href="contact.html">Contact</a>
+        </li>
+      </ol>
+    </nav>
+  </header>
+  <main>
+    <form action="project-detail.html">
+      <label for="project-search">Find a project:</label>
+      <input list="project-list" id="project-search" name="project-search"/>
+      <datalist id="project-list">
+        <option value="Project 1">
+        <option value="Project 2">
+        <option value="Project 3">
+      </datalist>  
+    </form>
+    
+
+    <div class="project-list">
+     
+      <ul>
+        <li>
+          <figure>
+            <img src="res/thumbnails/project.png" alt="project-1-preview"/>
+            <figcaption>Project 1</figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <img src="res/thumbnails/project.png" alt="project-1-preview"/>
+            <figcaption>Project 2</figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <img src="res/thumbnails/project.png" alt="project-1-preview"/>
+            <figcaption>Project 3</figcaption>
+          </figure>
+        </li>
+      </ul>
+    </div>
+
+    <!-- project item pop up -->
+    <template id="project-popup">
+      <div> 
+        <picture class="project-popup-picture">
+          <source src="res/thumbnails/project-thin.png"/>
+          <img src="res/thumbnails/project.png"/>
+        </picture>
+        <h3 class="project-popup-title"></h3>
+        <p class="project-popup-description"></p>
+      </div>
+      <a href="project-detail.html">
+        See project details
+      </a>
+    </template>
+  </main>
+  <footer>
+    <nav>
+      <ol>
+        <li>
+          <a href="#home">To Top</a>
+        </li>
+        <li>
+          <a href="about.html">About</a>
+        </li>
+        <li>
+          <a href="projects.html">Projects</a>
+        </li>
+        <li>
+          <a href="contact.html">Contact</a>
+        </li>
+      </ol>
+    </nav>
+  </footer></body>
+</html>

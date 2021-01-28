@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <ol>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="about.html">About</a>
+        </li>
+        <li>
+          <a href="projects.html">Projects</a>
+        </li>
+        <li>
+          <a href="contact.html">Contact</a>
+        </li>
+      </ol>
+    </nav>
+  </header>
+  <main>
+
+    <!-- query about specific project  -->
+
+    <form class="forms">
+      <div class="form-container">
+        <h2>Let's Talk!</h2>
+        <fieldset>
+          <legend>What do you want to talk about?</legend>
+
+          <input type="radio" name="topic" id="book"/>
+          <label for="book">I have a project for you</label>
+
+          <input type="radio" name="topic" id="hire"/>
+          <label for="hire">I'd like you to be part of my company</label>
+
+          <input type="radio" name="topic" id="connect"/>
+          <label for="connect">Let's get connected</label>
+        </fieldset>
+
+        <label class="form-label">Name</label>
+        <input 
+          id="contact-name" 
+          class="input" 
+          placeholder="John Smith" 
+          type="text"
+          onfocus="this.placeholder = ''"
+          onblur="this.placeholder = 'John Smith'"/>
+      
+        <label class="form-label">Email</label>
+        <input 
+          id="contact-email" 
+          class="input" 
+          placeholder="example@email.com" 
+          type="text"
+          onfocus="this.placeholder = ''"
+          onblur="this.placeholder = 'example@email.com'"/>
+
+
+        <label class="form-label">Message</label>
+        <textarea 
+          id="contact-message" 
+          class="input" 
+          type="text" 
+          ></textarea>
+        <button type="submit">Send It!</button>
+
+      </div>
+    </form>
+    
+    <canvas id="canvas">
+
+    </canvas>
+    <script>
+      var canvas = document.getElementById("canvas");
+      var context = canvas.getContext("2d");
+      context.fillText("I can use a canvas too!", 30, 80);
+    </script>
+    
+
+  </main>
+  <footer>
+    <nav>
+      <ol>
+        <li>
+          <a href="#home">To Top</a>
+        </li>
+        <li>
+          <a href="about.html">About</a>
+        </li>
+        <li>
+          <a href="projects.html">Projects</a>
+        </li>
+        <li>
+          <a href="contact.html">Contact</a>
+        </li>
+      </ol>
+    </nav>
+  </footer></body>
+</html>
